@@ -34,13 +34,13 @@ Inconsistent and fragmented datasets pose significant challenges to organization
 
 ## Methodology:
 
-### Step 1: Data Enrichment
+### Data Enrichment
 - **Consolidation and Structuring**: Sampled clickstream data was exported to the `cur-bucket` in JSON format, ensuring uniformity across sources.  
 - **AWS Data Catalog**: Configured crawlers to scan and organize data into a centralized repository, enabling seamless querying and analysis.
 
 ![image](https://github.com/user-attachments/assets/16687739-352d-4549-bedd-e6202961a23c)
 
-### Step 2: Data Protection
+### Data Protection
 - **Encryption with AWS KMS**: Configured symmetric keys to protect data at rest.  
 - **Bucket Encryption**: Enabled default encryption on S3 buckets, ensuring automatic protection for new data.  
 - **Versioning and Replication**: Enabled versioning for all buckets and established backup buckets with replication rules to prevent data loss.
@@ -49,13 +49,13 @@ Inconsistent and fragmented datasets pose significant challenges to organization
 
 ![Encrypted Buckets](https://github.com/user-attachments/assets/6c45a077-877c-4a47-bfda-9a5af26da15e)
 
-### Step 3: Data Governance
+### Data Governance
 - **Sensitive Data Handling**: Identified and masked Personally Identifiable Information (PII) to ensure compliance.  
 - **ETL Pipeline Design**: Developed a pipeline using AWS Glue for efficient data transformation and aggregation. Conditional routers were employed to route data into organized folders for downstream processing.
 
 ![ETL](https://github.com/user-attachments/assets/6bb15398-0f66-445c-865a-a5591daf8637)
 
-### Step 4: Data Observability
+###  Data Observability
 - **CloudWatch Dashboards**: Designed to track key metrics such as storage usage, resource performance, and cost estimations. This visualization aids in maintaining optimal resource management and financial planning.
 
 ![Cloud Watch Dashbard](https://github.com/user-attachments/assets/913a7db5-de55-4278-a1ce-daf40d5e9f01)
