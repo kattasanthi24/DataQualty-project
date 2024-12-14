@@ -1,4 +1,3 @@
-# DataQualty-project
 # Data Quality Control
 
 ## Project Description: Data Quality Control Initiative at ABC Enterprises
